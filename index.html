@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <title>FoundersMC</title>
+    
+    <meta content="This is a test message" property="og:title">
+	<meta content="more testing messages lol" property="og:description">
+	<meta content="EMBED_PLS" property="og:site_name">
+	<meta content='http://2w6kxc22rrr9mabqt1mglgait6.wpengine.netdna-cdn.com/wp-content/uploads/2016/05/Algebra.jpg' property='og:image'>
+    
+	<link rel="icon" href="img/favpng.png" type="image/png">	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+
+	<link rel="stylesheet" href=styles.css>
+
+</head>
+
+<body style="background: #eaeaea">
+
+    <div class=topimage>
+    
+    <img class="topstrip" src="img/DwarfStrip.png">
+    </div>
+    
+    
+    
+    <div class="topnav">
+    <a href="index.html" class=active>HOME</a>
+    <a href="">TOWNY</a>
+    <a href=http://founders.buycraft.net>STORE</a>
+    <a href="">HELP</a>
+    <a href="login/login.php">LOGIN/SIGN UP</a>
+    <!--    class="active"  next to a for the current page    -->
+    </div> 
+    
+    <img class="logo1" src="img/favpng.png">
+    
+    <img class="title" src="img/Founders.png">
+    
+    
+
+    <div class=centerbox>        <!--Main center box-->
+        
+    <div id="button"><a class=modapp href="ModApplication">Mod Application</a></div>
+        
+    <img class="welcome" src="img/WELCOME.png">
+        
+        
+        
+    <div class=slideshow>
+        <ul id="slides">
+    <img class="slide showing" src="img/spawn.png">
+    <img class="slide" src="img/DwarfEntrance.png">
+    <img class="slide" src="img/cavern.png">
+    <img class="slide" src="img/town.png">
+</ul>
+        </div>
+        
+
+    
+    <p class=townyheader>
+        TOWNY
+    </p>
+        
+    <p class=townyheader2>
+        Explore the world with your friends and show off builds!
+    </p>
+    
+	<p class="npara">
+      This website is currently under construction but here are some details you may need to know.
+    </p>
+    
+    <ul class="list1">
+        <li>Server ip: founders.us.to</li>
+        <li>Our public Discord invite link is: vvCEPgB</li>
+        <li>We currently have Towny open to the public and ready to play!</li>
+        <li>There are ranks available for purchase to boost your in-game experience.</li>
+    </ul>
+    
+  <p class="donateus">
+    Dollars
+  </p>
+        
+  <div class="donate1">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="PSCMBCU3LXJV8">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>
+        
+        
+        
+    <div class=calender>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23fcfcfc&amp;src=gosk67u7klkdjb45qogcmoh2mk%40group.calendar.google.com&amp;color=%23fcfcfc&amp;ctz=America%2FNew_York" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+    </div>
+        
+        
+        
+        
+        
+        
+    </div> <!--Main Center Box -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+<!-- Java Script --><!-- Java Script --><!-- Java Script --><!-- Java Script --><!-- Java Script --><!-- Java Script --><!-- Java Script -->
+<script>                      
+
+
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,8000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+</script>
+
+
+
+
+
+<!--<?php session_start(); ?>
+<div class="body content">
+    <div class="welcome">
+        <div class="alert alert-success"><?= $_SESSION['message'] ?></div>
+        <img src="<?= $_SESSION['avatar'] ?>"><br />
+        Welcome <span class="user"><?= $_SESSION['username'] ?></span>
+        <?php
+        $mysqli = new mysqli("localhost", "root", "j%dqq!Y;-N#A29KG", "accounts");
+        //Select queries return a resultset
+        $sql = "SELECT username, avatar FROM users";
+        $result = $mysqli->query($sql); //$result = mysqli_result object
+        //var_dump($result);
+        ?>
+        <div id='registered'>
+        <span>All registered users:</span>
+        <?php
+        while($row = $result->fetch_assoc()){ //returns associative array of fetched row
+            //echo '<pre>';
+            //print_r($row);
+            //echo '</pre>';
+            echo "<div class='userlist'><span>$row[username]</span><br />";
+            echo "<img src='$row[avatar]'></div>";
+        }
+        ?>  
+        </div>
+    </div>
+</div>
+-->

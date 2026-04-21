@@ -1,0 +1,114 @@
+    @charset "utf-8";
+    @font-face { 
+    font-family: GoodTimes; 
+    src: url(/fonts/MADEGoodTimeGroteskPERSONALUSE.otf) format("opentype"); 
+    font-weight: 300;
+} 
+    @font-face {
+    font-family: Minecraft;
+    src: url('//cdn.cubecraft.net/fonts/minecraftfont.woff')
+}
+    html {
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin: auto;
+}
+    /* Add a black background color to the top navigation */
+    .topnav {
+    position: relative;
+    background-color: #1e6dce;
+    overflow: hidden;
+    top: -4px;
+    left: -8px;
+    width: 1920px;
+    height: 40px;
+    
+}
+    /* Style the links inside the navigation bar */
+    .topnav a {
+    float: left;
+    left: 21.35%;
+    width: 152.8px;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    font-family: GoodTimes;
+    text-decoration: none;
+    font-size: 15px;
+}
+    /* Change the color of links on hover */
+    .topnav a:hover {
+    position: relative;
+    background-color: #ddd;
+    color: black;
+}
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        position: relative;
+        background-color: #4CAF50;
+        color: white;
+}
+    .centerbox {
+        background: #fcfcfc;
+        margin-left: 400px;
+        margin-right: 600px;
+        margin-top: 22px;
+        width: 885px;
+        height: 1500px;
+        border: 1px solid #c6c6c6;
+        border-radius: 5px;
+    } 
+    .topstrip {
+        position: relative;
+        margin-top: -181px;
+        width: 1920px;
+        height: 920;
+    margin-left: -8px;
+    }
+    .title {
+    z-index: 50;
+    position: relative;
+        width: 339.3px;
+        height: 169.5px;
+        left: 667px;
+        top: 17px;
+}
+    .logo1 {
+    position: relative;
+    z-index: 500;
+        top: -92px;
+        left: -343px;
+    background: none;
+    border: none;
+  }
+    .acomments, .become, .reason, .contribute, .reason, .banamount, .playtime, .jointime, .averagept, .jointime, .timezone, .age, .UserName {
+        margin-top: 10px; 
+        background: #eaeaea; 
+        border: solid 1px #1e6dce; 
+        width: 650px; 
+        height: 40px; 
+        border-radius: 5px;
+    }
+    .submit {
+    text-align: center;
+    
+    
+    
+    
+    }
+
+    @media screen and (min-width: 80px) and (max-width: 1000px) {       /* ~Phone */
+    .title {
+    font-size: 63px;
+      top: -36px;
+  }
+    .box { 
+    height: 30%;  
+    top: 0%;
+  }
+    .list1 {
+    position: relative;
+    left: -25px; 
+  }
+    }
